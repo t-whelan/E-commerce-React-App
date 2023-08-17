@@ -13,13 +13,17 @@ const ProductSearch = ({ products, setFilteredProducts }) => {
   };
 
   return (
+    
     <div className="search-bar">
+       <div className="search-container">
+      <p className="search-item-text">Search for products:</p>
       <input
         type="text"
-        placeholder="Search products..."
+        placeholder="Apple Watch, Samsung S21, Macbook Pro, ..."
         value={searchTerm}
         onChange={handleSearch}
       />
+    </div>
     </div>
   );
 };
