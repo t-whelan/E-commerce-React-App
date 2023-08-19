@@ -4,6 +4,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #EDEDED;
+
 }
 
 .app {
@@ -18,11 +20,22 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+  display: inline-flex;
+height: 493px;
+padding: 8px;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
 }
+/* nav bar icom */
+/* Custom style for the specific icon */
 
-.logo {
+
+
+/* .logo {
   font-size: 1.5rem;
-}
+} */
 
 .nav-links a {
   color: #fff;
@@ -43,11 +56,14 @@ body {
   margin: 10px;
   max-width: 250px;
   text-align: center;
+  
 }
 
 .product-card img {
   max-width: 100%;
-  height: auto;
+  height:auto;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .product-card h3 {
@@ -82,23 +98,89 @@ body {
 
 /* Sidebar.css */
 
-.sidebar {
-  background-color: #333;
-  color: #fff;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  position: fixed;
-  left: -250px; /* Start off-screen */
-  top: 0;
-  height: 100%;
-  transition: transform 0.3s ease-in-out;
-}
 
 .sidebar.open {
   transform: translateX(0); /* Slide in when open */
 }
+.sidebar {
+  /* Layout */
+  display: flex;
+padding: 8px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+
+  /* Sizing */
+  width: 32px;
+  height: 100vh;
+  padding: 16px;
+  background: var(--ui-white, #FFF);
+
+  /* Styling */
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100; /* Ensure the sidebar appears above other content */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add styling for the toggle button */
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+.open .toggle-btn {
+  transform: rotate(180deg);
+}
+
+/* Styling for menu items */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-items li {
+  margin-bottom: 12px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: var(--text-color, #333);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+  padding: 41px;
+}
+
+.menu-items a:hover {
+  color: var(--primary-color, #007bff);
+}
+
+.icon {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+
 
 /* grid cards */
 .product-card-grid {
@@ -127,11 +209,30 @@ body {
 .product-card h3 {
   font-size: 16px;
   margin: 10px 0;
+  color: var(--font-tertiary, #60695C);
+
+/* Body/Small/Regular/Condensed */
+font-family: Cabin;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.32px;
 }
 
 .product-card p {
   font-size: 14px;
   margin: 5px 0;
+  color: var(--font-tertiary, #60695C);
+
+/* Body/Small/Regular/Condensed */
+font-family: Cabin;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.32px;
+
 }
 
 .product-card button {
@@ -140,12 +241,24 @@ body {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  
 }
+.add-to-cart-button {
+  float: right;
+
+  /* Add any other styles you want for the button here */
+}
+
+.add-to-cart-button:hover{
+  background-color: #007bff;
+}
+
 
 /* ProductSearch.css */
 
 .search-bar {
   flex: 1 0 0;
+  border-radius: 5px;
 }
 
 
@@ -167,4 +280,19 @@ letter-spacing: -0.32px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  display: flex;
+padding: 8px 16px;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+width:459px;
+border-radius: 13px;
+background: var(--ui-white, #FFF);
+box-shadow: 0px 4px 16px 0px rgba(26, 31, 22, 0.15);
+
 }
+
+
+
+
+

@@ -9,21 +9,28 @@ const Sidebar = () => {
   };
 
   const menuItems = [
-    { id: 1, title: 'Home', link: '/' },
-    { id: 2, title: 'About', link: '/about' },
-    { id: 3, title: 'Services', link: '/services' },
-    { id: 4, title: 'Contact', link: '/contact' },
+    { id: 1, link: '/', icon: 'fa-brands fa-react' },
+    { id: 1, title: 'Home', link: '/', icon: 'fa-store' },
+    { id: 2, title: 'Bag', link: '/bag', icon: 'fa-bag-shopping' },
+    { id: 3, title: 'Menu', link: '/menu', icon: 'fa fa-bars' }, // Font Awesome menu icon
+    { id: 4, title: 'Logout', link: '/logout', icon: 'fa fa-sign-out' }, // Font Awesome logout icon
   ];
+
 
   return (
     <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
       <button className="toggle-btn" onClick={toggleSidebar}>
-        Toggle Sidebar
+        
       </button>
       <ul className="menu-items">
         {menuItems.map(item => (
           <li key={item.id}>
-            <a href={item.link}>{item.title}</a>
+            <a href={item.link}>
+              <span className="icon">
+                <i className={`fas ${item.icon}`} />
+              </span>
+              <span className="title">{item.title}</span>
+            </a>
           </li>
         ))}
       </ul>
@@ -32,3 +39,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+

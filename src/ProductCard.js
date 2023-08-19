@@ -7,7 +7,9 @@ const ProductCard = ({ product }) => {
       <h3>{product.name}</h3>
       <p>${product.price}</p>
       <p>{product.make}</p>
-      <button>Add to Cart</button>
+      <button className="add-to-cart-button">
+         <i className="fas fa-shopping-cart"></i>
+      </button>
     </div>
   );
 };
