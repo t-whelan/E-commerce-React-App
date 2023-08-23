@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import SideBar from './SideBar';
 import ProductList from './ProductList';
 import ProductSearch from './ProductSearch';
-
 import './App.css';
+
+
+
+
 
 
   const products = [
@@ -31,7 +34,9 @@ const App = () => {
       <ProductList products={filteredProducts} />
     </div>
   );
+  
 };
+
 
 export default App;
 

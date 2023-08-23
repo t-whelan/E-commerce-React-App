@@ -292,6 +292,66 @@ box-shadow: 0px 4px 16px 0px rgba(26, 31, 22, 0.15);
 
 }
 
+/* bag summary sidebar */
+.third-content{
+  border-left: 4px solid #1a1f1680;
+  height: 630px;
+  margin-top: 60px;
+  padding-right: 60px;
+  right: 0;
+  position: fixed;
+  background-color: #EDEDED;
+}
+.bag-item {
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+.small-item{
+  width: 64px;
+  height: 64px;
+}
+
+.small-items{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  margin-left: 7%;
+  width: 270px;
+}
+
+.label4 {
+  height: 24px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.label4, .text-wrapper4 {
+  color: #1A1F16;
+  /* Body/Normal/Medium/Normal */
+  font-family: Cabin;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.checkout {
+  text-align: center;
+}
+
+.checkout .text-wrapper12{
+  color: #FFF;
+  background-color: #1A1F16;
+}
 
 
 

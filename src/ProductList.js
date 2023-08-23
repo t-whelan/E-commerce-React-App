@@ -1,17 +1,24 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const ProductList = ({ products }) => {
+const ProductList = ({ products, addToCart }) => {
   return (
-    <div className="product-list">
-      {products.map(product => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+    <div>
+      <div className="product-list">
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            addToCart={addToCart} // Pass the addToCart function as a prop
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
 export default ProductList;
+
 
 
 
