@@ -3,6 +3,7 @@ import {faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import { useSelector, useDispatch } from "react-redux";
 import { getCartTotal } from '../redux/features/cartSlice';
 import { Link } from 'react-router-dom';
+//import './Bag.css'
 import { useEffect } from 'react';
 
 const SideBag = () => {
@@ -33,7 +34,7 @@ const SideBag = () => {
                     <div className="text-wrapper4">Bag Total: $ {totalPrice}</div>
                 </div>
                 <div className="view-bag">
-                    <Link to='/' style={{textDecoration: 'none'}}>
+                    <Link to='/checkout' style={{textDecoration: 'none'}}>
                         <button>
                             <FontAwesomeIcon style={{marginRight: '5px'}} icon={faShoppingBag}/>
                             <span>Checkout</span>

@@ -1,44 +1,34 @@
-import React, { useState } from 'react';
-import SideBar from './SideBar';
-import ProductList from './ProductList';
-import ProductSearch from './ProductSearch';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import SidebarTwo from './components/SideBarTwo'
+import Bag from './components/Bag'
+import RestrictSideBar from './components/RestrictSideBar'
+import Payment from './components/Payment'
+import Checkout from './components/Checkout'
+import Address from './components/Address'
+//import Checkout from './components/Checkout'
+//import Address from './components/Address'
+//import Checkoutt from './components/Checkoutt'
 
-
-
-
-
-
-  const products = [
-    { id: 1, name: 'Apple Watch', price: 529.99, image: 'Apple-watch.png', make: 'Series 5 se', },
-    { id: 2, name: 'Sony ZX33OBT', price: 39.99, image: 'headphones.png', make: 'Light Grey', },
-    { id: 3, name: 'Iphone 11', price: 619.99, image: 'iphone11-pin.jpg', make: 'Serious Black',  },
-    { id: 4, name: 'Iphone 11', price: 619.99, image: 'iphone11green.jpg', make: 'Subway Blue',  },
-    { id: 5, name: 'Iphone 11', price: 619.99, image: 'iphone11red.jpg', make: 'Product RED',  },
-    { id: 6, name: 'Iphone 11', price: 619.99, image: 'iphone11white.jpg', make: 'Milky White',  },
-    { id: 7, name: 'Iphone 13', price: 619.99, image: 'iphone13red2.jpg', make: 'Product RED',  },
-    { id: 8, name: 'Iphone 14', price: 619.99, image: 'iphone13red2.jpg', make: 'Product RED',  },
-  
-  
-
-  // Add more products
-];
-
-const App = () => {
-  const [filteredProducts, setFilteredProducts] = useState(products);
-
+function App() {
   return (
-    <div className="app">
-      <SideBar />
-      <ProductSearch products={products} setFilteredProducts={setFilteredProducts} />
-      <ProductList products={filteredProducts} />
-    </div>
-  );
-  
-};
+    <BrowserRouter>
+    <RestrictSideBar>
+      <SidebarTwo />
+    </RestrictSideBar>
+    <Routes>
+      <Route exact path = "/" element={<Home />}/>
+      <Route path='/bag' element={<Bag />}/>
+      <Route path='checkout' element={<Checkout />}/>
+      <Route path='/payment' element={<Payment />}/>
+      <Route path='/address' element={<Address />}/>
+    </Routes>
+    </BrowserRouter>
+    
+  )
+}
 
-
-export default App;
+export default App
 
 
 

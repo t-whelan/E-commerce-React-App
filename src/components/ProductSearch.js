@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from "prop-types";
+import { useSelector } from 'react-redux';
 
-const ProductSearch = ({ products, setFilteredProducts }) => {
+
+const ProductSearch = ({setFilteredProducts }) => {
+  const products = useSelector(state => state.allCart.items)
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = (event) => {
@@ -28,6 +32,13 @@ const ProductSearch = ({ products, setFilteredProducts }) => {
   );
 };
 
+ProductSearch.propTypes = {
+  products: PropTypes.array,
+  setFilteredProducts: PropTypes.func,
+  text: PropTypes.string,
+  text1: PropTypes.string,
+  text2: PropTypes.string,
+  text3: PropTypes.string,
+};
+
 export default ProductSearch;
-
-

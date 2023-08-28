@@ -1,15 +1,22 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faStarHalf, faMinus, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { useSelector } from "react-redux";
+//import { getItemTotal } from '../redux/cartSlice';
 import { useDispatch } from 'react-redux';
+//import { useEffect } from 'react';
 import "./Bag.css"
 import SideBag from './SideBag';
 import { removeItem, increaseItemQuantity, decreaseItemQuantity } from '../redux/features/cartSlice';
+//import { increment } from '../redux/cartSlice';
+//import { decrement } from '../redux/cartSlice';
+//import { update } from '../redux/cartSlice';
 
 const Bag = () => {
     
     const cart = useSelector(state => state.allCart.cart)
     const dispatch = useDispatch()
+    //useEffect(() => { dispatch(getItemTotal())}, [cart])
+    console.log(cart);
     return (
         <div className="item-bag-body">
             <div className="second-content">
