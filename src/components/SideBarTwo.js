@@ -20,7 +20,7 @@ const Nav = () => {
           <FontAwesomeIcon className="icon" icon={faBars} />
         </div>
         <div className="nav-link">
-          <img className="icon" src="./storefront.svg" />
+          <Link to='/'><img className="icon" src="./storefront.svg" /></Link>
         </div>
         <div className="nav-link-2">
             <Link to='/bag'><FontAwesomeIcon className="icon" icon={faShoppingBag} style={{ color: '#FFF' }}/></Link>

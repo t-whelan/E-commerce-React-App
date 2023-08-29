@@ -26,7 +26,7 @@ const Checkout = () => {
                         </div>
                         
                         <div>
-                            <Link to='/addres'><button>Change</button></Link>
+                            <Link to='/address'><button>Change</button></Link>
                         </div>
                     </div>
                     <div className="small-container">
@@ -110,7 +110,7 @@ const Checkout = () => {
                             <hr />
                             <div><div style={{float: 'left', color: '#E5252c', fontWeight: 500}}>Order Total:</div><div style={{float: 'right', color: '#E5252c', fontWeight: 500}}>$ {(totalPrice + (totalPrice*(0.002)) + (totalPrice*(0.152))).toFixed(2)}</div></div>
                             <hr/>
-                            <button>Place your order</button>
+                            <Link to='/success'><button>Place your order</button></Link>
                     </div>
                 </div>
                 <div style={{float: 'right', marginTop: '10%'}}>

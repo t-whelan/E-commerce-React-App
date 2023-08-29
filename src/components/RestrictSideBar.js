@@ -11,6 +11,12 @@ const RestrictSideBar = ({children}) => {
         console.log("This is location", location);
         if(location.pathname === '/address'){
             setShowSideBar(false)
+        }else if(location.pathname === '/payment'){
+            setShowSideBar(false)
+        }else if(location.pathname === '/checkout'){
+            setShowSideBar(false)
+        }else if(location.pathname === '/success'){
+            setShowSideBar(false)
         }else{
             setShowSideBar(true)
         }

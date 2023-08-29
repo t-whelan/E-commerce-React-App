@@ -6,13 +6,14 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/features/cartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   return (
       <article>
-        <img src={product.image} alt={product.name} />
+        <Link to={`/item/${product.id}`}><img src={product.image} alt={product.name} /></Link>
         <div className="text">
           <h3>{product.name}</h3>
           <p>$ {product.price}</p>

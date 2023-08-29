@@ -21,7 +21,7 @@ const Bag = () => {
         <div className="item-bag-body">
             <div className="second-content">
                 <div className="label">
-                    <div className="text-wrapper">Check your Bag Items</div>
+                    <h1 style={{marginLeft: '50px'}} className="text-wrappe">Check your Bag Items</h1>
                         {cart.map((product, index) => {
                             const itemTotal = (product.price * product.quantity).toFixed(2)
                             return (

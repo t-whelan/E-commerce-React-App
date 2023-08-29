@@ -208,7 +208,7 @@ button{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #FFF;
 }
 
 .item-in-bag .card15 img{
@@ -1342,4 +1342,234 @@ button{
       margin-left: 0;
     }
   }
+
+  /* successpage css */
+.Successpagebody {
+    background-image: './ordered.jpg';
+    margin: 0 100px 0 150px;
+    width: 1000px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px 10px #a4a4a4;
+  }
+  
+  .successheader h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+/* item view */
+/* Itemview css */
+
+.content-area1 {
+    padding: 8px 8px 8px 10px;
+    margin-left: 7%;
+    width: 989px;
+  }
+  
+  .content-frame {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 30rem;
+  
+  }
+  
+  .back-home {
+    background-color: white;
+    color: black;
+    border: none;
+    width: 100px;
+    border-radius: 13px;
+    padding: 5px 10px;
+    cursor: pointer;
+    justify-content: space-around;
+  }
+  
+  .back-home:hover {
+    background-color: #a4a4a4;
+  }
+  
+  .homefromitemview {
+    color: #111111;
+  }
+  
+  .homefromitemview:hover {
+    color: black;
+  
+  }
+  
+  .top-area {
+    display: flex;
+  }
+  
+  .image-area {
+    width: Hug (339.66px);
+    height: Hug (334px);
+    padding: 8px;
+    gap: 16px;
+    display: flex;
+  
+  }
+  
+  .main-img {
+    width: Hug (258px);
+    height: Hug (318px);
+    padding: 8px;
+    border-radius: 13px;
+    gap: 10px;
+    background-color: #FFFFFF;
+    float: left;
+  }
+  
+  .product-img {
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 5%;
+    flex-basis: 40%;
+  
+  }
+  
+  .text-area {
+    flex-direction: column;
+    color: #333;
+    display: flex;
+    float: right;
+  }
+  
+  .header {
+    width: Hug (354px);
+    height: Hug (136px);
+    padding: 8px;
+    gap: 8px;
+  }
+  
+  .header h1 {
+    display: inline;
+    width: 338px;
+    height: 74px;
+    font-family: Cabin;
+    letter-spacing: 0em;
+    text-align: left;
+    font-size: 40px;
+    margin: 0 0 10px;
+    font-weight: 800;
+  }
+  
+  .make {
+    margin: 2px;
+    font-family: Cabin;
+    font-size: 25px;
+    font-weight: 650;
+    letter-spacing: 0em;
+    line-height: 40px;
+    text-align: left;
+    color: #1A1F1680;
+  }
+  
+  .star-rating {
+    width: Hug (243px);
+    height: Hug (56px);
+    padding: 0px 8px 0px 8px;
+    gap: 5px;
+    display: flex;
+  }
+  
+  .star-rating p {
+    width: Hug (168px);
+    height: Hug (24px);
+    padding: 0px 16px 0px 0px;
+    gap: 8px;
+    display: flex
+  }
+  
+  .stars {
+    color: #128050;
+  }
+  
+  .pricing {
+    display: inline;
+  }
+  
+  .pricing .price {
+    width: 118px;
+    height: 38px;
+    font-family: Cabin;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1A1F16;
+    margin: 0;
+    display: flex;
+  
+  }
+  
+  .product-description {
+    width: Fill (525.34px);
+    height: Fixed (122px);
+    padding: 8px;
+    gap: 10px;
+  }
+  
+  .product-description p {
+    width: 509.3443603515625px;
+    height: 106px;
+    font-family: Cabin;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1A1F16;
+    ;
+  }
+  
+  .add-to-cart-btn {
+    padding: 8px;
+    gap: 10px;
+    justify-content: end;
+    margin: 0;
+    align-items: flex-end;
+    float: right;
+  }
+  
+  .add-to-cart-btn:hover {
+    color: black;
+    background-color: #a4a4a4;
+    border: #FFF;
+  }
+  
+  .hr {
+    width: 858.0000000000032px;
+    border: 3px angle, 0 deg;
+  }
+  
+  .bottom-half {
+    width: Fill (905px);
+    height: Hug (493px);
+    padding: 8px;
+    gap: 16px;
+  }
+  
+  .bottom-half h5 {
+    width: 153px;
+    height: 38px;
+    font-family: Cabin;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1A1F16;
+  }
+  
+  .specs {
+    width: 873px;
+    height: 383px;
+  }
+  
   
