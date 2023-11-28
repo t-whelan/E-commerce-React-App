@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingBag, faBars, faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import { faShoppingBag, faBars, faRightFromBracket, faStore } from '@fortawesome/free-solid-svg-icons'
+import { Link, NavLink } from 'react-router-dom'
 import './Bag.css'
 
 const Nav = () => {
@@ -19,11 +19,11 @@ const Nav = () => {
         <div className="div-2">
           <FontAwesomeIcon className="icon" icon={faBars} />
         </div>
-        <div className="nav-link">
-          <Link to='/'><img className="icon" src="./storefront.svg" /></Link>
+        <div className='nav-link item'>
+          <NavLink to='/'><FontAwesomeIcon className="icon" icon={faStore} /></NavLink>
         </div>
-        <div className="nav-link-2">
-            <Link to='/bag'><FontAwesomeIcon className="icon" icon={faShoppingBag} style={{ color: '#FFF' }}/></Link>
+        <div className="nav-link item">
+            <NavLink to='/bag'><FontAwesomeIcon className="icon" icon={faShoppingBag}/></NavLink>
         </div>
       </div>
       <div className="div-2">

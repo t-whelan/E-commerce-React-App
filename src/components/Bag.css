@@ -96,6 +96,7 @@ button{
     position: relative;
     width: 24px;
     height: 24px;
+    color: #1A1F16;
 }
   
 .navbar1 .nav-link {
@@ -108,6 +109,17 @@ button{
     flex: 0 0 auto;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.active{
+  color: #FFF;
+}
+
+.navbar1 .nav-link:not(.active):hover .icon{
+    color: #FFF;
+}
+.navbar1 .nav-link:not(.active):hover{
+    background-color: #1A1F16;
 }
   
 .navbar1 .nav-link-2 {
